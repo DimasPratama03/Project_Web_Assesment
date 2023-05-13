@@ -33,14 +33,25 @@ Route::get('/home',function(){
     return redirect('/admin');
 });
 
+//Route ke  Halaman Admin
+
 Route::middleware(['auth'])->group(function (){
     Route::get('/admin',[App\Http\Controllers\AdminController::class,'index']);
-    Route::get('/admin/admin',[App\Http\Controllers\AdminController::class,'admin'])->middleware('userAkses:admin');
+    Route::get('/admin/admin',[App\Http\Controllers\AdminController::class,'admin'])->name('admin');
+    Route::get('/admin/admin/datauser',[App\Http\Controllers\DataUserController::class,'datauser'])->name('datauser');
+    Route::get('/admin/admin/datauser/tambah',[App\Http\Controllers\DataUserController::class,'tambah'])->name('datauser.tambah');
+    Route::post('/admin/admin/datauser/tambah/simpan',[App\Http\Controllers\DataUserController::class,'simpan'])->name('datauser.simpan');
+    Route::get('/admin/admin/datates',[App\Http\Controllers\DataTesController::class,'datates'])->name('datates');
+    Route::get('/admin/admin/datates/tambah',[App\Http\Controllers\DataTesController::class,'tambah'])->name('datates.tambah');
+    Route::post('/admin/admin/datates/tambah/simpan',[App\Http\Controllers\DataTesController::class,'simpan'])->name('datates.simpan');
     Route::get('/logout',[App\Http\Controllers\SesiController::class,'logout']);
 });
+
+//Route ke Halaman User
 
 Route::middleware(['auth'])->group(function (){
     Route::get('/dashboard',[App\Http\Controllers\UsersController::class,'index']);
     Route::get('/dashboard/user',[App\Http\Controllers\UsersController::class,'user'])->middleware('userAkses:user');
 });
+
 

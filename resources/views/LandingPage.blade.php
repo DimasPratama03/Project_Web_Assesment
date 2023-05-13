@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Personal Assesment -- CDC Polije</title>
+  <title>Online Personal Assesment -- Polije</title>
 
   <!-- 
     - favicon
@@ -39,13 +39,13 @@
       <div class="overlay" data-overlay></div>
 
       <a href="#">
-        <h1 class="logo">Desinic</h1>
+        <h1 class="logo">Online Assessment</h1>
       </a>
 
       <nav class="navbar" data-navbar>
 
         <div class="navbar-top">
-          <a href="#" class="logo">Desinic</a>
+          <a href="#" class="logo">Online Assessment</a>
 
           <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
             <ion-icon name="close-outline"></ion-icon>
@@ -62,9 +62,6 @@
             <a href="#about" class="navbar-link" data-navbar-link>Tentang Kami</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#services" class="navbar-link" data-navbar-link>Layanan</a>
-          </li>
 
           <li class="navbar-item">
             <a href="#features" class="navbar-link" data-navbar-link>Manfaat</a>
@@ -108,14 +105,16 @@
 
             <p class="hero-text">
             Online Personal Assessment dapat membantu
-            menemukan potensi terpendam yang ada padamu!
+            menemukan kepribadian yang ada pada dirimu!
             </p>
 
-
+            <a href="login">
+            <button class="btn">Mulai Tes</button>
+            </a>
           </div>
 
           <figure class="hero-banner">
-            <img src="images/hero-banner.png" width="694" height="529" loading="lazy" alt="hero-banner"
+            <img src="images/hero-banner.png" width="50" height="10" loading="lazy" alt="hero-banner"
               class="w-100 banner-animation">
           </figure>
 
@@ -140,7 +139,7 @@
 
           <div class="about-content">
 
-            <h2 class="h2 section-title underline">Why Our Agency</h2>
+            <h2 class="h2 section-title underline">Apa itu Assessment</h2>
 
             <p class="about-text">
               In dictum aliquam turpis lacinia iaculis. Fusce vel malesuada magna. Nulla vel maximus risus. Donec
@@ -190,14 +189,14 @@
         - #SERVICE
       -->
 
-      <section class="section service" id="services">
+      {{-- <section class="section service" id="services">
         <div class="container">
 
           <h2 class="h2 section-title underline">Personal Assesment</h2>
 
-          <ul class="service-list">
+          <ul class="service-list"> --}}
 
-            <li>
+            {{-- <li>
               <div class="service-card">
 
                 <div class="card-icon">
@@ -217,9 +216,9 @@
                 </button>
 
               </div>
-            </li>
+            </li> --}}
 
-            <li>
+            {{-- <li>
               <div class="service-card">
 
                 <div class="card-icon">
@@ -283,9 +282,9 @@
                 </button>
 
               </div>
-            </li>
+            </li> --}}
 
-            <li>
+            {{-- <li>
               <div class="service-card">
 
                 <div class="card-icon">
@@ -305,9 +304,9 @@
                 </button>
 
               </div>
-            </li>
+            </li> --}}
 
-            <li>
+            {{-- <li>
               <div class="service-card">
 
                 <div class="card-icon">
@@ -327,9 +326,9 @@
                 </button>
 
               </div>
-            </li>
+            </li> --}}
 
-          </ul>
+          {{-- </ul> --}}
 
         </div>
       </section>
@@ -357,10 +356,10 @@
                 </div>
 
                 <div class="content">
-                  <h3 class="h3 title">Idea & Analysis</h3>
+                  {{-- <h3 class="h3 title">Ide & Analysis</h3> --}}
 
                   <p class="text">
-                    Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
+                    Mendapatkan gambaran detail dan saran pekerjaan yang sesuai hasil yang kamu dapatkan
                   </p>
                 </div>
 
@@ -375,10 +374,10 @@
                 </div>
 
                 <div class="content">
-                  <h3 class="h3 title">Designing</h3>
+                  {{-- <h3 class="h3 title">Designing</h3> --}}
 
                   <p class="text">
-                    Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
+                    Hasil asesmen dapat kamu tuliskan di profil singkat CV dengan menambahkan pengalaman yang kamu miliki
                   </p>
                 </div>
 
@@ -402,11 +401,10 @@
                 </div>
 
                 <div class="content">
-                  <h3 class="h3 title">Development</h3>
+                  {{-- <h3 class="h3 title">Development</h3> --}}
 
                   <p class="text">
-                    Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
-                  </p>
+                    Kamu juga bisa mengaitkan hasil assessment dalam perkenalan diri kamu di sesi interview
                 </div>
 
               </div>
@@ -420,10 +418,10 @@
                 </div>
 
                 <div class="content">
-                  <h3 class="h3 title">Testing & Lunching</h3>
+                  {{-- <h3 class="h3 title">Testing & Lunching</h3> --}}
 
                   <p class="text">
-                    Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
+                    Hasil assessment bisa membantu kamu memilih program upgrading skill yang bisa kamu ambil selama masa penantian panggilan kerja
                   </p>
                 </div>
 
@@ -434,225 +432,6 @@
 
         </div>
       </section>
-
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog" id="blog">
-        <div class="container">
-
-          <h2 class="h2 section-title underline">Berita & Acara</h2>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="banner">
-                  <a href="#">
-                    <img src="images/blog-1.jpg" width="750" height="350" loading="lazy"
-                      alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
-                  </a>
-                </figure>
-
-                <div class="content">
-
-                  <h3 class="h3 title">
-                    <a href="#">
-                      Vestibulum massa arcu, consectetu pellentesque scelerisque.
-                    </a>
-                  </h3>
-
-                  <p class="text">
-                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
-                    imperdiet.
-                  </p>
-
-                  <div class="meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-03-07">7 March, 2022</time>
-                    </div>
-
-                    <button class="comment" aria-label="Comment">
-                      <ion-icon name="chatbubble-outline"></ion-icon>
-
-                      <data value="15">15</data>
-                    </button>
-
-                    <button class="share" aria-label="Share">
-                      <ion-icon name="share-social-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="banner">
-                  <a href="#">
-                    <img src="images/blog-2.jpg" width="750" height="350" loading="lazy"
-                      alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi." class="img-cover">
-                  </a>
-                </figure>
-
-                <div class="content">
-
-                  <h3 class="h3 title">
-                    <a href="#">
-                      Quisque egestas iaculis felis eget placerat ut pulvinar mi.
-                    </a>
-                  </h3>
-
-                  <p class="text">
-                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
-                    imperdiet.
-                  </p>
-
-                  <div class="meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-03-07">7 March, 2022</time>
-                    </div>
-
-                    <button class="comment" aria-label="Comment">
-                      <ion-icon name="chatbubble-outline"></ion-icon>
-
-                      <data value="15">15</data>
-                    </button>
-
-                    <button class="share" aria-label="Share">
-                      <ion-icon name="share-social-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="banner">
-                  <a href="#">
-                    <img src="images/blog-3.jpg" width="750" height="350" loading="lazy"
-                      alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere." class="img-cover">
-                  </a>
-                </figure>
-
-                <div class="content">
-
-                  <h3 class="h3 title">
-                    <a href="#">
-                      Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere.
-                    </a>
-                  </h3>
-
-                  <p class="text">
-                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
-                    imperdiet.
-                  </p>
-
-                  <div class="meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-03-07">7 March, 2022</time>
-                    </div>
-
-                    <button class="comment" aria-label="Comment">
-                      <ion-icon name="chatbubble-outline"></ion-icon>
-
-                      <data value="15">15</data>
-                    </button>
-
-                    <button class="share" aria-label="Share">
-                      <ion-icon name="share-social-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="banner">
-                  <a href="#">
-                    <img src="images/blog-4.jpg" width="750" height="350" loading="lazy"
-                      alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
-                  </a>
-                </figure>
-
-                <div class="content">
-
-                  <h3 class="h3 title">
-                    <a href="#">
-                      Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis.
-                    </a>
-                  </h3>
-
-                  <p class="text">
-                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
-                    imperdiet.
-                  </p>
-
-                  <div class="meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-03-07">7 March, 2022</time>
-                    </div>
-
-                    <button class="comment" aria-label="Comment">
-                      <ion-icon name="chatbubble-outline"></ion-icon>
-
-                      <data value="15">15</data>
-                    </button>
-
-                    <button class="share" aria-label="Share">
-                      <ion-icon name="share-social-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
 
   <!-- 
     - #FOOTER
@@ -668,9 +447,9 @@
           <a href="#" class="logo">Desinic</a>
 
           <p class="text">
-          Assesment Online adalah Platform Psikotes Online yang dapat digunakan bagi alumni Polije.  
+          Assesment Online adalah Platform Psikotes Online yang dapat digunakan bagi semua orang.  
           Kami memberikan kemudahan dan kepraktisan solusi dalam pelaksanaan Psikotes 
-          untuk mendaftar ke perusahaan yang anda inginkan.
+          untuk menemukan kepribadian yang sesuai dengan diri anda.
           </p>
 
           <ul class="social-list">

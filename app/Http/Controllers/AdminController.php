@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\Auth;
 class AdminController extends Controller
 {
     function index(){
-        return view('admin');
+        return view('layouts.admin');
     }
 
     function admin(){
-        return view('admin');
+        return view('layouts.admin');
     }
 }

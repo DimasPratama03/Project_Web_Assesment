@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApiUserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/api_user', [ApiUserController::class, 'getAll']);
+Route::get('/api_user/{id}', [ApiUserController::class, 'getUser']);
+Route::post('/api_user', [ApiUserController::class, 'CreateUser']);
