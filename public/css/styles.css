@@ -919,14 +919,14 @@ select.form-control:not([size]):not([multiple]) {
   vertical-align: middle; }
 .table:not(.table-sm) thead th {
   border-bottom: none;
-  background-color: rgba(0, 0, 0, 0.04);
-  color: #666;
+  background-color: rgba(117, 135, 238, 0.848);
+  color: #ffffff;
   padding-top: 15px;
   padding-bottom: 15px; }
 .table.table-md th, .table.table-md td {
   padding: 10px 15px; }
 .table.table-bordered td, .table.table-bordered th {
-  border-color: #f6f6f6; }
+  border-color: #cfcdcd; }
 
 .table-links {
   color: #34395e;

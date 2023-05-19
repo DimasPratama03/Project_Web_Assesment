@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
 
+//Controller Untuk login user menggunakan akun google
+
 class GoogleController extends Controller
 {
     public function redirectToGoogle(){

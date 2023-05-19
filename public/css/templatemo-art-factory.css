@@ -1452,3 +1452,59 @@ preloader
     opacity: 0;
   }
 }
+
+/* Form Tes */
+
+body.formtes {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+b {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-button,
+.next-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1d6ad7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.back-button:hover,
+.next-button:hover {
+  background-color: #1d6ad7;
+}
+

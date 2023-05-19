@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Contracts\Service\Attribute\Required;
 
+//Controller untuk membedakan user dan admin ketika melakukan proses login
+
 class SesiController extends Controller
 {
     function index()
