@@ -14,7 +14,10 @@ class ApiUserController extends Controller
     public function getAll()
     {
         $user = User::all();
-        return Response::json($user, 200);
+        return response()->json([
+            "data" => $user
+        ]);
+        // Response::json($user, 200);
     }
 
     /**
@@ -58,9 +61,13 @@ class ApiUserController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update($id, Request $request)
     {
-        //
+        User::find($id)->update($request->all());
+        return response()->json([
+            'status' => "ok",
+            'message' => "data berhasil di update"
+        ], 201);
     }
 
     /**
