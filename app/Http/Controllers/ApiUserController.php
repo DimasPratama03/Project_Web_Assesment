@@ -47,8 +47,11 @@ class ApiUserController extends Controller
      */
     public function updateUser($id, Request $request)
     {
-<<<<<<< HEAD
-        //
+        User::find($id)->update($request->all());
+        return response()->json([
+            'status' => 'ok',
+            'message' => 'Data User Berhasil Diubah!'
+        ], 201);
     }
 
     /**
@@ -64,17 +67,7 @@ class ApiUserController extends Controller
      */
     public function update($id, Request $request)
     {
-        User::find($id)->update($request->all());
-        return response()->json([
-            'status' => "ok",
-            'message' => "data berhasil di update"
-=======
-        User::find($id)->update($request->all());
-        return response()->json([
-            'status' => 'ok',
-            'message' => 'Data User Berhasil Diubah!'
->>>>>>> refs/remotes/origin/main
-        ], 201);
+
     }
 
     /**
