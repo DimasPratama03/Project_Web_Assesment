@@ -16,7 +16,7 @@ use Laravel\Socialite\Facades\Socialite;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+// Route untuk ke landing Page
 Route::get('/', function () {
     return view('LandingPage');
 });

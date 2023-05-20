@@ -22,3 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/api_user', [ApiUserController::class, 'getAll']);
 Route::get('/api_user/{id}', [ApiUserController::class, 'getUser']);
 Route::post('/api_user', [ApiUserController::class, 'CreateUser']);
+Route::put('/api_user/{id}', [ApiUserController::class, 'updateUser']);
+Route::delete('/api_user/{id}', [ApiUserController::class, 'deleteUser']);
+
