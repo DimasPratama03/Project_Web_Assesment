@@ -43,12 +43,7 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Form</h1>
-            <div class="section-header-breadcrumb">
-              <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-              <div class="breadcrumb-item"><a href="#">Bootstrap Components</a></div>
-              <div class="breadcrumb-item">Table</div>
-            </div>
+            <h1>Master Data</h1>
           </div>
 
           @yield('content')
@@ -56,7 +51,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+          Since &copy; 2023 <div class="bullet"></div> Online Personal Assessment <a href="https://pusatkarir.polije.ac.id/">Polije</a>
         </div>
         <div class="footer-right">
           

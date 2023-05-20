@@ -9,10 +9,10 @@ class UsersController extends Controller
 {
 
     function index(){
-        return view('dashboard');
+        return view('pages.dashboard');
     }
 
     function user(){
-        return view('dashboard');
+        return view('pages.dashboard');
     }
 }

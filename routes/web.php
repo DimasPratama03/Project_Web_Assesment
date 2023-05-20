@@ -16,15 +16,19 @@ use Laravel\Socialite\Facades\Socialite;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+// Route untuk ke landing Page
 Route::get('/', function () {
     return view('LandingPage');
 });
+
+//Route Login Admin
 
 Route::middleware(['guest'])->group(function () {
     Route::get('/login',[SesiController::class,'index'])->name('login');
     Route::post('/login',[SesiController::class,'login']);   
 });
+
+//Route Login User Dengan Google
 
 Route::get('auth/redirect',[App\Http\Controllers\GoogleController::class,'redirectToGoogle'])->name('google.login');
 Route::get('/google/redirect',[App\Http\Controllers\GoogleController::class,'GoogleCallback'])->name('google.callback');
@@ -52,6 +56,7 @@ Route::middleware(['auth'])->group(function (){
 Route::middleware(['auth'])->group(function (){
     Route::get('/dashboard',[App\Http\Controllers\UsersController::class,'index']);
     Route::get('/dashboard/user',[App\Http\Controllers\UsersController::class,'user'])->middleware('userAkses:user');
+    Route::get('/formtes/user',[App\Http\Controllers\FormTesController::class,'index'])->name('formtes');
 });
 
 

@@ -9,36 +9,28 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
+//Controller untuk menampilkan data user pada halaman admin
+
 class DataUserController extends Controller
 {
-    //Tampilan Data
-    public function datauser() {
-        $users = User::latest()->paginate(5);
-        return view('layouts.datauser', compact('users'));
-    }
+    //Tampilan Data dengan tambahan pagination dan searching data
+    public function datauser(Request $request) {
 
-    //Tampilan Tambah Data
-    public function tambah(){
-        return view('layouts.crud-tambah-datauser');
-    }
+        $search = $request->query('search');
 
-    //Method Simpan Data
-    public function simpan(Request $request):RedirectResponse
-    {
-        $this->validate($request, [
-            'name'     => 'required|min:5',
-            'email'   => 'required|min:5',
-            'password'  => 'required|min:8',
-            'role' => 'required|min:5',
+        if (!empty($search)) {
+            $users = User::where('users.name', 'like', '%' . $search . '%')
+            ->orWhere('users.email','like', '%' . $search . '%')
+            ->orWhere('users.role','like', '%' . $search . '%')
+            ->paginate(5)->fragment('users');
+        }else{
+            $users = User::latest()->paginate(5)->fragment('users');
+        }
+
+        return view('layouts.datauser')->with([
+            'users' => $users,
+            'search' => $search
         ]);
 
-        User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => $request->password,
-            'role' => $request->role
-        ]);
-
-        return redirect()->route('datauser')->with(['success' => 'Data Berhasil Disimpan!']);
     }
 }
