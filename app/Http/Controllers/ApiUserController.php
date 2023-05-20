@@ -42,32 +42,26 @@ class ApiUserController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function updateUser($id, Request $request)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
+        User::find($id)->update($request->all());
+        return response()->json([
+            'status' => 'ok',
+            'message' => 'Data User Berhasil Diubah!'
+        ], 201);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function deleteUser($id)
     {
-        //
+        User::destroy($id);
+
+        return response()->json([
+            'status' => 'ok',
+            'message' => 'Data User Berhasil Dihapus!'
+        ], 201);
+
     }
 }
