@@ -54,21 +54,6 @@ class ApiUserController extends Controller
         ], 201);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update($id, Request $request)
-    {
-
-    }
 
     /**
      * Remove the specified resource from storage.

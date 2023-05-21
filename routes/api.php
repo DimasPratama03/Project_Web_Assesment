@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApiResultTestController;
 use App\Http\Controllers\ApiUserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -24,3 +25,10 @@ Route::get('/api_user/{id}', [ApiUserController::class, 'getUser']);
 Route::post('/api_user', [ApiUserController::class, 'CreateUser']);
 Route::put('/api_user/{id}', [ApiUserController::class, 'updateUser']);
 Route::delete('/api_user/{id}', [ApiUserController::class, 'deleteUser']);
+
+// get Api Result Test
+Route::get('/api_result_test', [ApiResultTestController::class, 'getAll']);
+Route::get('/api_result_test/{id}', [ApiResultTestController::class, 'getResultTest']);
+Route::post('/api_result_test', [ApiResultTestController::class, 'createResultTest']);
+// Route::put('/api_result_test', [ApiResultTestController::class, 'getAll']);
+Route::delete('/api_result_test/{id}', [ApiResultTestController::class, 'deleteResultTest']);
