@@ -42,14 +42,14 @@ class ApiResultTestController extends Controller
     /**
      * Display the specified resource.
      */
-    // public function updateresult_test($google_id, Request $request)
-    // {
-    //     result_test::find($google_id)->update($request->all());
-    //     return response()->json([
-    //         'status' => 'ok',
-    //         'message' => 'Data result_test Berhasil Diubah!'
-    //     ], 201);
-    // }
+    public function updateResultTest($google_id, Request $request)
+    {
+        ResultTest::find($google_id)->update($request->all());
+        return response()->json([
+            'status' => 'ok',
+            'message' => 'Data result_test Berhasil Diubah!'
+        ], 201);
+    }
 
 
     /**

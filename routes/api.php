@@ -28,7 +28,7 @@ Route::delete('/api_user/{id}', [ApiUserController::class, 'deleteUser']);
 
 // get Api Result Test
 Route::get('/api_result_test', [ApiResultTestController::class, 'getAll']);
-Route::get('/api_result_test/{id}', [ApiResultTestController::class, 'getResultTest']);
+Route::get('/api_result_test/{google_id}', [ApiResultTestController::class, 'getResultTest']);
 Route::post('/api_result_test', [ApiResultTestController::class, 'createResultTest']);
-// Route::put('/api_result_test', [ApiResultTestController::class, 'getAll']);
-Route::delete('/api_result_test/{id}', [ApiResultTestController::class, 'deleteResultTest']);
+Route::put('/api_result_test/{google_id}', [ApiResultTestController::class, 'updateResultTest']);
+Route::delete('/api_result_test/{google_id}', [ApiResultTestController::class, 'deleteResultTest']);
