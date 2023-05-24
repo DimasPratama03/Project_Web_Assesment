@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->string("value_extrovert");
             $table->string("personality");
             $table->date("date");
+            $table->date("date_expired");
             $table->timestamps();
         });
     }

@@ -13,7 +13,7 @@ class ApiResultTestController extends Controller
         $result_test = ResultTest::all();
         return response()->json([
             "data" => $result_test
-        ]);
+        ], 201);
         // Response::json($result_test, 200);
     }
 
@@ -22,8 +22,21 @@ class ApiResultTestController extends Controller
      */
     public function getResultTest($google_id)
     {
-        $result_test = ResultTest::find($google_id);
-        return Response::json($result_test, 200);
+        $result_test = ResultTest::where('google_id', '=', $google_id)->first();
+        return ($result_test == null || $result_test == "") ?
+            Response::json([
+                "status" => "404",
+                "message" => "empty",
+                "data" => array(
+                    "google_id" => "kosong",
+                    "date" => "kosong"
+                )
+            ], 201) :
+            Response::json([
+                "status" => "200",
+                "message" => "success",
+                "data" => $result_test
+            ], 201);
     }
 
     /**
@@ -55,7 +68,7 @@ class ApiResultTestController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function deleteresult_test($google_id)
+    public function deleteResultTest($google_id)
     {
         ResultTest::destroy($google_id);
 

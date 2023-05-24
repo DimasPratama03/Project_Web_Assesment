@@ -9,6 +9,9 @@ class ResultTest extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'google_id';
+    public $incrementing = false;
+
     protected $table = 'result_tes';
 
     protected $fillable = [
@@ -17,5 +20,6 @@ class ResultTest extends Model
         'value_extrovert',
         'personality',
         'date',
+        'date_expired',
     ];
 }
