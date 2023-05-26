@@ -17,7 +17,7 @@
                     <div class="left-text">
                         <p>This template is <a href="#">last updated on 20 August 2019 </a>for main menu drop-down arrow and sub menu text color. Duis auctor dolor eu scelerisque vestibulum. Vestibulum lacinia, nisl sit amet tristique condimentum. <br><br>
                         Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices malesuada odio. Donec non quam euismod, mattis dui a, ultrices nisi.</p>
-                        <a href="{{ route('formtes') }}" class="main-button">Mulai Tes</a>
+                        <a href="{{ route('quiz.index') }}" class="main-button">Mulai Tes</a>
                     </div>
                 </div>
             </div>

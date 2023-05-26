@@ -9,7 +9,7 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li class="scroll-to-section"><a href="#welcome" class="active">Assessment</a></li>
+                        <li class="scroll-to-section"><a href="{{ route('back.dashboard') }}" class="active">Assessment</a></li>
                         <li class="scroll-to-section"><a href="#about">Riwayat</a></li>
                         <li class="submenu">
                             <a href="javascript:;">Profile</a>

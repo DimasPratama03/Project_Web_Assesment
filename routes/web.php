@@ -34,7 +34,7 @@ Route::get('auth/redirect',[App\Http\Controllers\GoogleController::class,'redire
 Route::get('/google/redirect',[App\Http\Controllers\GoogleController::class,'GoogleCallback'])->name('google.callback');
 
 Route::get('/home',function(){
-    return redirect('/admin');
+    return redirect('/dashboard');
 });
 
 //Route ke  Halaman Admin
@@ -56,7 +56,9 @@ Route::middleware(['auth'])->group(function (){
 Route::middleware(['auth'])->group(function (){
     Route::get('/dashboard',[App\Http\Controllers\UsersController::class,'index']);
     Route::get('/dashboard/user',[App\Http\Controllers\UsersController::class,'user'])->middleware('userAkses:user');
-    Route::get('/formtes/user',[App\Http\Controllers\FormTesController::class,'index'])->name('formtes');
+    Route::get('/quiz',[App\Http\Controllers\QuizController::class,'index'])->name('quiz.index');
+    Route::get('/dashboard',[App\Http\Controllers\UsersController::class,'index'])->name('back.dashboard');
+    Route::post('/quiz/submit', [App\Http\Controllers\QuizController::class,'submit'])->name('quiz.submit');
 });
 
 
