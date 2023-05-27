@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\JenisKepribadian;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Session;
@@ -421,11 +422,18 @@ $totalPercentage = $introvertPercentage + $ekstrovertPercentage;
 $introvertPercentage = ($introvertPercentage / $totalPercentage) * 100;
 $ekstrovertPercentage = ($ekstrovertPercentage / $totalPercentage) * 100;
 
+// Get personality and description
+$personalityData = JenisKepribadian::where('personality', $introvertScore > $ekstrovertScore ? 'introvert' : 'ekstrovert')->first();
+$personality = $personalityData->personality;
+$deskripsi = $personalityData->deskripsi;
+
 return view('pages.result', [
     'introvertScore' => $introvertScore,
     'introvertPercentage' => $introvertPercentage,
     'ekstrovertScore' => $ekstrovertScore,
-    'ekstrovertPercentage' => $ekstrovertPercentage
+    'ekstrovertPercentage' => $ekstrovertPercentage,
+    'personality' => $personality,
+    'deskripsi' => $deskripsi,
 ]);
 
 

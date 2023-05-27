@@ -30,7 +30,7 @@
         canvas {
             margin-top: 20px;
         }
-        
+
         /* Style untuk ART FACTORY */
         .art-factory {
             text-align: center;
@@ -63,6 +63,26 @@
         .art-factory a:hover {
             background-color: #0056b3;
         }
+
+        .save-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .save-button button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .save-button button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -71,20 +91,35 @@
             <h3>Hasil Penilaian Introvert and Extrovert Personal Assessment</h3>
             <p>Skor Introvert: {{ $introvertScore }} ({{ $introvertPercentage }}%)</p>
             <p>Skor Ekstrovert: {{ $ekstrovertScore }} ({{ $ekstrovertPercentage }}%)</p>
-        
+            
             <canvas id="chart"></canvas>
         </div>
-        
+
+        <div>
+            <h3>Personality dan Deskripsi</h3>
+            <p>Personality: {{ $personality }}</p>
+            <p>Deskripsi: {{ $deskripsi }}</p>
+        </div>
+
+        <div class="save-button">
+            <button onclick="saveResult()">Simpan</button>
+        </div>
+
         <div class="art-factory">
             <h1></h1>
-            <p>Apabila Hasil Penilaian Diatas Kurang Memuaskan,Harap Lakukan Tes Kepribadian Kepada Ahlinya</p>
+            <p>Apabila Hasil Penilaian Diatas Kurang Memuaskan, Harap Lakukan Tes Kepribadian Kepada Ahlinya</p>
             <a href="{{ route('back.dashboard') }}">Kembali ke Dashboard</a>
         </div>
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
+
     <script>
+        function saveResult() {
+            // Implementasi logika untuk menyimpan hasil penilaian
+            alert('Hasil penilaian berhasil disimpan!');
+        }
+
         var ctx = document.getElementById('chart').getContext('2d');
         var chart = new Chart(ctx, {
             type: 'pie',
@@ -111,6 +146,6 @@
             }
         });
     </script>
-    
+
 </body>
 </html>

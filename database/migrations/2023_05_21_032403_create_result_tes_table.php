@@ -11,7 +11,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('result_tes', function (Blueprint $table) {
-            $table->string("google_id");
+            $table->string("google_id")->primary();
             $table->string("value_introvert");
             $table->string("value_extrovert");
             $table->string("personality");
