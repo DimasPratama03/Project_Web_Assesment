@@ -18,7 +18,7 @@
             <li><a class="nav-link" href="{{ route('datauser') }}">Data Users</a></li>
           </ul>
           <ul class="dropdown-menu">
-            <li><a class="nav-link" href="{{ route('datates') }}">Data Tes</a></li>
+            <li><a class="nav-link" href="{{ route('datakepribadian') }}">Data Kepribadian</a></li>
           </ul>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="">Data Detail Tes</a></li>

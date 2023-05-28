@@ -45,9 +45,13 @@ Route::middleware(['auth'])->group(function (){
     Route::get('/admin/admin/datauser',[App\Http\Controllers\DataUserController::class,'datauser'])->name('datauser');
     Route::get('/admin/admin/datauser/tambah',[App\Http\Controllers\DataUserController::class,'tambah'])->name('datauser.tambah');
     Route::post('/admin/admin/datauser/tambah/simpan',[App\Http\Controllers\DataUserController::class,'simpan'])->name('datauser.simpan');
-    Route::get('/admin/admin/datates',[App\Http\Controllers\DataTesController::class,'datates'])->name('datates');
-    Route::get('/admin/admin/datates/tambah',[App\Http\Controllers\DataTesController::class,'tambah'])->name('datates.tambah');
-    Route::post('/admin/admin/datates/tambah/simpan',[App\Http\Controllers\DataTesController::class,'simpan'])->name('datates.simpan');
+    Route::get('/admin/admin/datakepribadian',[App\Http\Controllers\JenisKepribadianController::class,'index'])->name('datakepribadian');
+    Route::get('/admin/admin/datakepribadian/tambah',[App\Http\Controllers\JenisKepribadianController::class,'create'])->name('datakepribadian.tambah');
+    Route::post('/admin/admin/datakepribadian/tambah/simpan',[App\Http\Controllers\JenisKepribadianController::class,'store'])->name('datakepribadian.store');
+    Route::get('/admin/admin/datakepribadian/show/{jenisKepribadian}',[App\Http\Controllers\JenisKepribadianController::class,'show'])->name('datakepribadian.show');
+    Route::get('/admin/admin/datakepribadian/edit/{jenisKepribadian}',[App\Http\Controllers\JenisKepribadianController::class,'edit'])->name('datakepribadian.edit');
+    Route::put('/admin/admin/datakepribadian/edit/update/{jenisKepribadian}',[App\Http\Controllers\JenisKepribadianController::class,'update'])->name('datakepribadian.update');
+    Route::delete('/admin/admin/datakepribadian/delete/{jenisKepribadian}', [App\Http\Controllers\JenisKepribadianController::class, 'destroy'])->name('datakepribadian.destroy');
     Route::get('/logout',[App\Http\Controllers\SesiController::class,'logout']);
 });
 
