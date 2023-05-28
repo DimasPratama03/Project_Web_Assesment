@@ -52,7 +52,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          Since &copy; 2023 <div class="bullet"></div> Online Personal Assessment <a href="https://pusatkarir.polije.ac.id/">Polije</a>
+          Since &copy; 2023 <div class="bullet"></div> Personality Test <a href="https://pusatkarir.polije.ac.id/">Polije</a>
         </div>
         <div class="footer-right">
           

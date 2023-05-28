@@ -43,8 +43,7 @@ Route::middleware(['auth'])->group(function (){
     Route::get('/admin',[App\Http\Controllers\AdminController::class,'index']);
     Route::get('/admin/admin',[App\Http\Controllers\AdminController::class,'admin'])->name('admin');
     Route::get('/admin/admin/datauser',[App\Http\Controllers\DataUserController::class,'datauser'])->name('datauser');
-    Route::get('/admin/admin/datauser/tambah',[App\Http\Controllers\DataUserController::class,'tambah'])->name('datauser.tambah');
-    Route::post('/admin/admin/datauser/tambah/simpan',[App\Http\Controllers\DataUserController::class,'simpan'])->name('datauser.simpan');
+    Route::get('/admin/admin/laporantes',[App\Http\Controllers\DataResultController::class,'dataresult'])->name('laporantes');
     Route::get('/admin/admin/datakepribadian',[App\Http\Controllers\JenisKepribadianController::class,'index'])->name('datakepribadian');
     Route::get('/admin/admin/datakepribadian/tambah',[App\Http\Controllers\JenisKepribadianController::class,'create'])->name('datakepribadian.tambah');
     Route::post('/admin/admin/datakepribadian/tambah/simpan',[App\Http\Controllers\JenisKepribadianController::class,'store'])->name('datakepribadian.store');
