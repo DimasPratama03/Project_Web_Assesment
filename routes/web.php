@@ -63,6 +63,7 @@ Route::middleware(['auth'])->group(function (){
     Route::get('/quiz',[App\Http\Controllers\QuizController::class,'index'])->name('quiz.index');
     Route::get('/dashboard',[App\Http\Controllers\UsersController::class,'index'])->name('back.dashboard');
     Route::post('/quiz/submit', [App\Http\Controllers\QuizController::class,'submit'])->name('quiz.submit');
+    Route::post('/save-result', [App\Http\Controllers\ResultController::class, 'saveResult']);
 });
 
 

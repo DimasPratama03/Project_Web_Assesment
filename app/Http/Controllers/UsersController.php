@@ -4,15 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\ResultTest;
 
 class UsersController extends Controller
 {
+    public function index()
+    {
+        $user = Auth::user();
+        $hasTakenQuiz = ResultTest::where('google_id', $user->google_id)->exists();
+        $result = ResultTest::where('google_id', $user->google_id)->first();
+        $dateExpired = $result ? $result->date_expired : null;
 
-    function index(){
-        return view('pages.dashboard');
+        return view('pages.dashboard', compact('hasTakenQuiz', 'dateExpired'));
     }
 
-    function user(){
+    public function user()
+    {
         return view('pages.dashboard');
     }
 }

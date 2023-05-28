@@ -116,8 +116,28 @@
 
     <script>
         function saveResult() {
-            // Implementasi logika untuk menyimpan hasil penilaian
-            alert('Hasil penilaian berhasil disimpan!');
+            fetch('/save-result', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                },
+                body: JSON.stringify({
+                    introvertScore: '{{ $introvertScore }}',
+                    ekstrovertScore: '{{ $ekstrovertScore }}',
+                    introvertPercentage: '{{ $introvertPercentage }}',
+                    ekstrovertPercentage: '{{ $ekstrovertPercentage }}',
+                    personality: '{{ $personality }}',
+                    deskripsi: '{{ $deskripsi }}'
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Hasil penilaian berhasil disimpan!');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
         }
 
         var ctx = document.getElementById('chart').getContext('2d');
