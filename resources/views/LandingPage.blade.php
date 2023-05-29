@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Personal Assesment -- Polije</title>
+  <title>Personality Test -- Polije</title>
 
   <!-- 
     - favicon
@@ -39,13 +39,13 @@
       <div class="overlay" data-overlay></div>
 
       <a href="#">
-        <h1 class="logo">Online Assessment</h1>
+        <h1 class="logo">Personality Test</h1>
       </a>
 
       <nav class="navbar" data-navbar>
 
         <div class="navbar-top">
-          <a href="#" class="logo">Online Assessment</a>
+          <a href="#" class="logo">Personality Test</a>
 
           <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
             <ion-icon name="close-outline"></ion-icon>
@@ -74,6 +74,7 @@
 
       <a href="login" class="btn">
 
+
         <span>Login</span>
       </a>
 
@@ -101,10 +102,10 @@
           <div class="hero-content">
 
 
-            <h2 class="h2 hero-title">Online Personal Assesment</h2>
+            <h2 class="h2 hero-title">Personality Test</h2>
 
             <p class="hero-text">
-            Online Personal Assessment dapat membantu
+            Personality Test dapat membantu
             menemukan kepribadian yang ada pada dirimu!
             </p>
 
@@ -139,22 +140,20 @@
 
           <div class="about-content">
 
-            <h2 class="h2 section-title underline">Apa itu Assessment</h2>
+            <h2 class="h2 section-title underline">Apa itu Personality Test</h2>
 
             <p class="about-text">
-              In dictum aliquam turpis lacinia iaculis. Fusce vel malesuada magna. Nulla vel maximus risus. Donec
-              volutpat metus
-              lacinia risus accumsan, ac bibendum libero efficitur. Pellentesque nec nisi sit amet magna tempus
-              hendrerit ut a odio.
+              Personality test adalah sebuah tes yang berguna untuk mengungkap dan memahami karakteristik kepribadian seseorang. 
+              Melalui serangkaian pertanyaan dan penilaian, Personality test membantu Anda menggali ke dalam aspek-aspek penting dari diri Anda, 
+              membantu Anda mengenali kekuatan Anda, serta memberikan panduan tentang kepribadiam yang ada pada diri anda.
             </p>
 
             <p class="about-text">
-              Praesent rhoncus commodo tortor, id pulvinar nisl blandit at. Nulla facilisi. Quisque turpis ante,
-              vehicula condimentum
-              arcu.
+              Mengetahui kepribadian Anda adalah langkah penting dalam pengembangan diri. Ketika Anda memahami karakteristik dan preferensi pribadi Anda,
+              Anda dapat lebih baik dalam mengelola hubungan, mengambil keputusan, menavigasi karir, dan mencapai kepuasan hidup yang lebih tinggi.
             </p>
 
-            <ul class="stats-list">
+            {{-- <ul class="stats-list">
 
               <li class="stats-card">
                 <p class="h3 stats-title">9875</p>
@@ -174,7 +173,7 @@
                 <p class="stats-text">Test Completed</p>
               </li>
 
-            </ul>
+            </ul> --}}
 
           </div>
 
@@ -359,8 +358,9 @@
                   {{-- <h3 class="h3 title">Ide & Analysis</h3> --}}
 
                   <p class="text">
-                    Mendapatkan gambaran detail dan saran pekerjaan yang sesuai hasil yang kamu dapatkan
-                  </p>
+                    Personality test membantu Anda memahami kekuatan, 
+                    kelemahan, dan preferensi pribadi Anda. Dengan pemahaman yang lebih baik tentang diri Anda, Anda 
+                    dapat mengoptimalkan potensi Anda.
                 </div>
 
               </div>
@@ -377,7 +377,9 @@
                   {{-- <h3 class="h3 title">Designing</h3> --}}
 
                   <p class="text">
-                    Hasil asesmen dapat kamu tuliskan di profil singkat CV dengan menambahkan pengalaman yang kamu miliki
+                    Melalui personality test, Anda dapat mengidentifikasi area yang mungkin perlu diperbaiki atau ditingkatkan. 
+                    Hal ini memungkinkan Anda untuk fokus pada pengembangan pribadi yang lebih mendalam, baik itu dalam hal keterampilan 
+                    interpersonal, manajemen emosi, atau peningkatan kepercayaan diri.
                   </p>
                 </div>
 
@@ -404,7 +406,9 @@
                   {{-- <h3 class="h3 title">Development</h3> --}}
 
                   <p class="text">
-                    Kamu juga bisa mengaitkan hasil assessment dalam perkenalan diri kamu di sesi interview
+                    Personality test dapat membantu Anda memahami bagaimana kepribadian Anda berinteraksi dengan kepribadian orang lain. 
+                    Dengan wawasan ini, Anda dapat memperbaiki komunikasi, membangun hubungan yang lebih harmonis 
+                    dan saling mendukung dalam kehidupan pribadi anda
                 </div>
 
               </div>
@@ -421,7 +425,8 @@
                   {{-- <h3 class="h3 title">Testing & Lunching</h3> --}}
 
                   <p class="text">
-                    Hasil assessment bisa membantu kamu memilih program upgrading skill yang bisa kamu ambil selama masa penantian panggilan kerja
+                    melalui personality test dapat membantu Anda dalam pemilihan karir yang sesuai dengan minat, nilai, 
+                    dan kecenderungan Anda. Anda dapat menemukan pekerjaan yang cocok dengan kepribadian Anda dan mengembangkan potensi Anda.
                   </p>
                 </div>
 
@@ -444,10 +449,10 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">Desinic</a>
+          <a href="#" class="logo">Personality Test</a>
 
           <p class="text">
-          Assesment Online adalah Platform Psikotes Online yang dapat digunakan bagi semua orang.  
+          Personality Test adalah Platform Psikotes Online yang dapat digunakan bagi semua orang.  
           Kami memberikan kemudahan dan kepraktisan solusi dalam pelaksanaan Psikotes 
           untuk menemukan kepribadian yang sesuai dengan diri anda.
           </p>
@@ -479,27 +484,19 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Our links</p>
+            <p class="footer-list-title">Isi Halaman</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Home</a>
+            <a href="#home" class="footer-link">Beranda</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">About Us</a>
+            <a href="#about" class="footer-link">Tentang Kami</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Services</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Team</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Blog</a>
+            <a href="#features" class="footer-link">Manfaat</a>
           </li>
 
         </ul>
@@ -507,55 +504,15 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Our Services</p>
+            <p class="footer-list-title">Pelayanan Kami</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Strategy & Research</a>
+            <a href="login" class="footer-link">Tes Kepribadian Introvert dan Ekstrovert</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Web Development</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Web Solution</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Digital Marketing</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">App Design</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Other links</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">FAQ</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & Conditions</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Support</a>
+            <a href="login" class="footer-link">Penilaian Hasil Tes Kepribadian</a>
           </li>
 
         </ul>
@@ -586,8 +543,8 @@
             </div>
 
             <div>
-              <a href="mailto:info@desinic.com" class="footer-item-link">info@desinic.com</a>
-              <a href="mailto:help@desinic.com" class="footer-item-link">help@desinic.com</a>
+              <a href="mailto:info@desinic.com" class="footer-item-link">PersonalityTest.com</a>
+              <a href="mailto:help@desinic.com" class="footer-item-link">PersonalityTest.com</a>
             </div>
 
           </li>
@@ -599,7 +556,7 @@
             </div>
 
             <address class="footer-item-link">
-              Pontiac, Michigan, United States of America
+              Jember,Jawa Timur,Indonesia
             </address>
 
           </li>
@@ -611,7 +568,7 @@
 
     <div class="footer-bottom">
       <p class="copyright">
-        &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Right Reserved
+        Since &copy; 2023 <a href="#" class="copyright-link">Personality Test</a>. Polije
       </p>
     </div>
 
@@ -636,7 +593,7 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="js/script.js"></script>
 
   <!-- 
     - ionicon link

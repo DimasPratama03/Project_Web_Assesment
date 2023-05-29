@@ -5,12 +5,12 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="#" class="logo">Online Assessment</a>
+                    <a href="#" class="logo">Personality Test</a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         <li class="scroll-to-section"><a href="{{ route('back.dashboard') }}" class="active">Assessment</a></li>
-                        <li class="scroll-to-section"><a href="#about">Riwayat</a></li>
+                        <li class="scroll-to-section"><a href="{{ route('user.history') }}">Riwayat</a></li>
                         <li class="submenu">
                             <a href="javascript:;">Profile</a>
                             <ul>

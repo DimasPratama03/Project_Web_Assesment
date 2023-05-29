@@ -18,8 +18,10 @@
                     @if ($hasTakenQuiz)
                         <p>Anda telah melakukan tes. Silakan tunggu hingga {{ $dateExpired }}</p>
                     @else
-                        <p>This template is <a href="#">last updated on 20 August 2019 </a>for main menu drop-down arrow and sub menu text color. Duis auctor dolor eu scelerisque vestibulum. Vestibulum lacinia, nisl sit amet tristique condimentum. <br><br>
-                        Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices malesuada odio. Donec non quam euismod, mattis dui a, ultrices nisi.</p>
+                        <p>Tes Kepribadian yang kami sediakan adalah tes yang mengukur kepribadian introvert dan ekstrovert.
+                            Di dalam tes di sediakan 40 tes dan penilaian untuk menentukan kepribadian berdasarkan 40 tes yang telah dilakukan<br><br>
+                            Apabila hasil tes kurang memuaskan,harap melakukan tes kembali ke ahlinya.
+                        </p>
                         <a href="{{ route('quiz.index') }}" class="main-button">Mulai Tes</a>
                     @endif
                 </div>
@@ -40,7 +42,7 @@
         <div class="row">
             <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
                 <div class="left-heading">
-                    <h5>Cara Memulai Tes Assessment</h5>
+                    <h5>Cara Memulai Tes Kepribadian</h5>
                 </div>
                 {{-- <p>Proin justo sapien, posuere suscipit tortor in, fermentum mattis elit. Aenean in feugiat purus.</p> --}}
                 <ul>
@@ -62,7 +64,8 @@
                         <img src="images/about-icon-03.png" alt="">
                         <div class="text">
                             <h6>Hasil Tes Assessment</h6>
-                            <p>Hasil tes akan kamu lihat setelah selesai mengisi jawaban atau bisa didapatkan melalui menu riwayat</p>
+                            <p>Hasil tes akan kamu lihat setelah selesai mengisi jawaban atau bisa didapatkan melalui menu riwayat.
+                            </p>
                         </div>
                     </li>
                 </ul>
@@ -87,8 +90,10 @@
                     <h5>Apa itu introvert dan ekstrovert?</h5>
                 </div>
                 <div class="left-text">
-                    <p>This template is <a href="#">last updated on 20 August 2019 </a>for main menu drop-down arrow and sub menu text color. Duis auctor dolor eu scelerisque vestibulum. Vestibulum lacinia, nisl sit amet tristique condimentum. <br><br>
-                    Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices malesuada odio. Donec non quam euismod, mattis dui a, ultrices nisi.</p>
+                    <p>Introvert dan Ekstrovert adalah contoh jenis kepribadian yang ada pada dalam diri manusia.
+                        Introvert adalah seseorang yang cenderung lebih tertarik pada dunia internal mereka sendiri.
+                        Ekstrovert adalah seseorang yang cenderung lebih tertarik pada dunia eksternal dan energik dalam berinteraksi sosial.<br><br>
+                    </p>
                 </div>
             </div>
         </div>

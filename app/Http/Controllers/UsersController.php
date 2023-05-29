@@ -22,4 +22,14 @@ class UsersController extends Controller
     {
         return view('pages.dashboard');
     }
+
+    public function history()
+    {
+        $results = ResultTest::where('google_id', Auth::user()->google_id)
+            ->orderBy('date', 'desc')
+            ->get();
+        
+        return view('pages.riwayat', ['results' => $results]);
+    }
+
 }

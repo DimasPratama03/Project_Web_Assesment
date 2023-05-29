@@ -20,7 +20,7 @@ https://templatemo.com/tm-537-art-factory
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/Tampilan Users.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/Quiz_Result.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/owl-carousel.css')}}">
     
 
