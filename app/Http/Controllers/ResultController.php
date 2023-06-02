@@ -18,7 +18,7 @@ class ResultController extends Controller
         $result->value_extrovert = $request->ekstrovertScore;
         $result->personality = $request->personality;
         $result->date = Carbon::now();
-        $result->date_expired = Carbon::now()->addDays(5);
+        $result->date_expired = Carbon::now()->addDays(1);
         $result->save();
 
         return response()->json(['message' => 'Result saved successfully'], 200);
