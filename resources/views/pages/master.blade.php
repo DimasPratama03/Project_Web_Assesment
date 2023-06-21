@@ -52,7 +52,7 @@ https://templatemo.com/tm-537-art-factory
         
         @yield('content')
 
-    @stack('before-scripts')
+    @section('before-scrips')
     
     <!-- jQuery -->
     <script src="{{asset('js/jquery-2.1.0.min.js')}}"></script>
@@ -70,6 +70,6 @@ https://templatemo.com/tm-537-art-factory
     <!-- Global Init -->
     <script src="{{asset('js/custom.js')}}"></script>
 
-    @stack('pages-scripts')
+    @endsection('pages-scripts')
 </body>
 </html>

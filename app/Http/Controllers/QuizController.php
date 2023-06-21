@@ -414,13 +414,13 @@ for ($i = 0; $i <= $start; $i++) {
 // Convert scores to percentage with adjustments
 $totalIntrovertQuestions = 20;
 $totalEkstrovertQuestions = 20;
-$introvertPercentage = ($introvertScore / $totalIntrovertQuestions) * 100;
-$ekstrovertPercentage = ($ekstrovertScore / $totalEkstrovertQuestions) * 100;
+$introvertPercentage = round(($introvertScore / $totalIntrovertQuestions) * 100);
+$ekstrovertPercentage = round(($ekstrovertScore / $totalEkstrovertQuestions) * 100);
 
 // Adjust percentages to ensure they add up to 100
 $totalPercentage = $introvertPercentage + $ekstrovertPercentage;
-$introvertPercentage = ($introvertPercentage / $totalPercentage) * 100;
-$ekstrovertPercentage = ($ekstrovertPercentage / $totalPercentage) * 100;
+$introvertPercentage = round(($introvertPercentage / $totalPercentage) * 100);
+$ekstrovertPercentage = round(($ekstrovertPercentage / $totalPercentage) * 100);
 
 // Get personality and description
 $personalityData = JenisKepribadian::where('personality', $introvertScore > $ekstrovertScore ? 'introvert' : 'ekstrovert')->first();
@@ -435,6 +435,7 @@ return view('pages.result', [
     'personality' => $personality,
     'deskripsi' => $deskripsi,
 ]);
+
 
 
     }

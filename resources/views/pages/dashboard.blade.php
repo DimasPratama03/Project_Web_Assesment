@@ -16,15 +16,24 @@
                 </div>
                 <div class="left-text">
                     @if ($hasTakenQuiz)
-                        <p>Anda telah melakukan tes. Silakan tunggu hingga {{ $dateExpired }}</p>
+                        @if (strtotime($dateExpired) > strtotime("now"))
+                            <p>Anda telah melakukan tes. Silakan tunggu hingga {{ $dateExpired }}</p>
+                        @else
+                            <p>Tes Kepribadian yang kami sediakan adalah tes yang mengukur kepribadian introvert dan ekstrovert.
+                                Di dalam tes di sediakan 40 tes dan penilaian untuk menentukan kepribadian berdasarkan 40 tes yang telah dilakukan<br><br>
+                                Apabila hasil tes kurang memuaskan, harap melakukan tes kembali ke ahlinya.
+                            </p>
+                            <a href="{{ route('quiz.index') }}" class="main-button">Mulai Tes</a>
+                        @endif
                     @else
                         <p>Tes Kepribadian yang kami sediakan adalah tes yang mengukur kepribadian introvert dan ekstrovert.
                             Di dalam tes di sediakan 40 tes dan penilaian untuk menentukan kepribadian berdasarkan 40 tes yang telah dilakukan<br><br>
-                            Apabila hasil tes kurang memuaskan,harap melakukan tes kembali ke ahlinya.
+                            Apabila hasil tes kurang memuaskan, harap melakukan tes kembali ke ahlinya.
                         </p>
                         <a href="{{ route('quiz.index') }}" class="main-button">Mulai Tes</a>
                     @endif
                 </div>
+                
             </div>
         </div>
         <div class="row">
@@ -105,5 +114,9 @@
     </div>
 </section>
 <!-- ***** Features Big Item End ***** -->
+{{-- @stack('pages-scripts') --}}
+
+@yield('before-scrips')
+
 
 </body>
